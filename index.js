@@ -41,6 +41,7 @@ if(process.env.STRAVA_REDIRECT_URI)
   util.config.redirect_uri = process.env.STRAVA_REDIRECT_URI;
 
 //assign various api segments to strava object
+strava.util = util;
 strava.oauth = oauth;
 strava.athlete = athlete;
 strava.athletes = athletes;
